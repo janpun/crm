@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A fully featured admin theme which can be used to build CRM, CMS, etc.">
+    <meta name="author" content="Coderthemes">
+
+    <!-- App Favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+    <!-- App title -->
+    <title>点乔CRM</title>
+
+    <!-- App CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/core.css" rel="stylesheet" type="text/css" />
+    <link href="css/components.css" rel="stylesheet" type="text/css" />
+    <link href="css/icons.css" rel="stylesheet" type="text/css" />
+    <link href="css/pages.css" rel="stylesheet" type="text/css" />
+    <link href="css/menu.css" rel="stylesheet" type="text/css" />
+    <link href="css/responsive.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+
+    <!-- HTML5 Shiv and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="js/modernizr.min.js"></script>
+
+  </head>
+
+
+  <body class="fixed-left">
+
+    <!-- Begin page -->
+    <div id="wrapper">
+
+      <!-- Top Bar Start -->
+      <div class="topbar">
+
+        <!-- LOGO -->
+        <div class="topbar-left">
+          <a href="index.html" class="logo">
+            <img src="images/logo.png" alt="">
+          </a>
+        </div>
+
+        <!-- Button mobile view to collapse sidebar menu -->
+        <div class="navbar navbar-default" role="navigation">
+          <div class="container">
+
+            <!-- Page title -->
+            <ul class="nav navbar-nav navbar-left">
+              <li>
+                <button class="button-menu-mobile open-left">
+                  <i class="zmdi zmdi-menu"></i>
+                </button>
+              </li>
+            </ul>
+
+            <!-- Right(Notification and Searchbox -->
+            <ul class="nav navbar-nav navbar-right">
+              <li>
+                <!-- Notification -->
+                <div class="notification-box">
+                  <ul class="list-inline m-b-0">
+                    <li>
+                      <a href="javascript:void(0);" class="right-bar-toggle">
+                        <i class="zmdi zmdi-notifications-none"></i>
+                      </a>
+                      <div class="noti-dot">
+                        <span class="dot"></span>
+                        <span class="pulse"></span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <!-- End Notification bar -->
+              </li>
+              <li class="hidden-xs">
+                <form role="search" class="app-search">
+                  <input type="text" placeholder="Search..."
+                       class="form-control">
+                  <a href=""><i class="fa fa-search"></i></a>
+                </form>
+              </li>
+            </ul>
+
+          </div><!-- end container -->
+        </div><!-- end navbar -->
+      </div>
+      <!-- Top Bar End -->
+
+
+      <!-- ========== Left Sidebar Start ========== -->
+      <div class="left side-menu">
+        <div class="sidebar-inner slimscrollleft">
+
+          <!--- Sidemenu -->
+          <div id="sidebar-menu">
+            <ul>
+              <li>
+                <a href="index.html" class="waves-effect"><i class="iconfont">&#xe60f;</i> <span> 回到首页 </span> </a>
+              </li>
+              <li class="has_sub">
+                <a href="javascript:void(0);" class="waves-effect"><i class="iconfont">&#xe611;</i> <span> 客户管理 </span> <span class="menu-arrow"></span></a>
+                <ul class="list-unstyled">
+                  <li><a href="ui-buttons.html"><i class="iconfont">&#xe600;</i>销售计划管理</a></li>
+                </ul>
+              </li>
+
+              <li class="has_sub">
+                <a href="javascript:void(0);" class="waves-effect"><i class="iconfont">&#xe610;</i> <span> 销售管理 </span> <span class="menu-arrow"></span></a>
+                <ul class="list-unstyled">
+                  <li><a href="ui-buttons.html"><i class="iconfont">&#xe600;</i>销售计划管理</a></li>
+                  <li><a href="ui-buttons.html"><i class="iconfont">&#xe600;</i>销售机会</a></li>
+                  <li><a href="ui-buttons.html"><i class="iconfont">&#xe600;</i>销售机会管理</a></li>
+                  <li><a href="ui-buttons.html"><i class="iconfont">&#xe600;</i>寻求合作</a></li>
+                  <li><a href="ui-buttons.html"><i class="iconfont">&#xe600;</i>联系人管理</a></li>
+                  <li><a href="ui-buttons.html"><i class="iconfont">&#xe600;</i>销售预期管理</a></li>
+                </ul>
+              </li>
+            </ul>
+            <div class="clearfix"></div>
+          </div>
+          <!-- Sidebar -->
+          <div class="clearfix"></div>
+
+        </div>
+
+      </div>
+      <!-- Left Sidebar End -->
+
+
+
+      <!-- ============================================================== -->
+      <!-- Start right Content here -->
+      <!-- ============================================================== -->
+      <div class="content-page">
+        <!-- Start content -->
+        <div class="content">
+          <div class="container">
+            <div class="page-title">
+              联系人管理
+            </div>
+            <div class="breadcrumb">
+              <span class="icon"><i class="iconfont">&#xe626;</i></span>
+              <span class="text">您当前的位置：Home <i class="iconfont">&#xe679;</i> 销售管理 <i class="iconfont">&#xe679;</i> 联系人管理</span>
+            </div>
+            <div class="row">
+              <div class="grid-5-1">
+                <div class="block block-customer-meta green">
+                  <div class="mini-title">
+                    <i class="iconfont">&#xe621;</i>客户分类
+                  </div>
+                  <div class="block-customer-meta-content">
+                    目标客户
+                  </div>
+                </div>
+              </div>
+              <div class="grid-5-1">
+                <div class="block block-customer-meta red">
+                  <div class="mini-title">
+                    <i class="iconfont">&#xe683;</i>跟进状态
+                  </div>
+                  <div class="block-customer-meta-content">
+                    初访
+                  </div>
+                </div>
+              </div>
+              <div class="grid-5-1">
+                <div class="block block-customer-meta purple">
+                  <div class="mini-title">
+                    <i class="iconfont">&#xe644;</i>联系电话
+                  </div>
+                  <div class="block-customer-meta-content">
+                    0571-88770625
+                  </div>
+                </div>
+              </div>
+              <div class="grid-5-1">
+                <div class="block block-customer-meta blue">
+                  <div class="mini-title">
+                    <i class="iconfont">&#xe72c;</i>客户所有人
+                  </div>
+                  <div class="block-customer-meta-content">
+                    周先进
+                  </div>
+                </div>
+              </div>
+              <div class="grid-5-1">
+                <div class="block block-customer-meta yellow">
+                  <div class="mini-title">
+                    <i class="iconfont">&#xe605;</i>创建时间
+                  </div>
+                  <div class="block-customer-meta-content">
+                    2017-11-05 07:29
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row m-t-30">
+              <div class="grid-5-3">
+                <div class="block block-customer-content">
+                  <ul class="nav nav-tabs">
+                    <li role="presentation" class="active">
+                        <a href="#tab1" role="tab" data-toggle="tab">相关</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#tab2" role="tab" data-toggle="tab">资料</a>
+                    </li>
+                    <span>
+                      联系人<i>(1)</i>
+                      销售机会<i>(1)</i>
+                      合同<i>(1)</i>
+                      文档<i>(1)</i>
+                    </span>
+                  </ul>
+                  <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane fade in active" id="tab1">
+                      <div class="block-customer-content-list">
+                        <h3>
+                          联系人(1)
+                          <div class="icon">
+                            <ul>
+                              <li><i class="iconfont">&#xe638;</i></li>
+                            </ul>
+                          </div>
+                        </h3>
+                        <div class="block-customer-content-item">
+                          <ul>
+                            <li>
+                              <label>联系人：</label>
+                              <div class="block-customer-content-item-content">周先进</div>
+                            </li>
+                            <li>
+                              <label>手机号码：</label>
+                              <div class="block-customer-content-item-content">18888888888</div>
+                            </li>
+                            <li>
+                              <label>联系地址：</label>
+                              <div class="block-customer-content-item-content">浙江省杭州市江南大道1880号中南国际大厦2008</div>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="block-customer-content-item">
+                          <ul>
+                            <li>
+                              <label>联系人：</label>
+                              <div class="block-customer-content-item-content">周先进</div>
+                            </li>
+                            <li>
+                              <label>手机号码：</label>
+                              <div class="block-customer-content-item-content">18888888888</div>
+                            </li>
+                            <li>
+                              <label>联系地址：</label>
+                              <div class="block-customer-content-item-content">浙江省杭州市江南大道1880号中南国际大厦2008</div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="block-customer-content-list">
+                        <h3>联系人(1)
+                          <div class="icon">
+                            <ul>
+                              <li><i class="iconfont">&#xe638;</i></li>
+                            </ul>
+                          </div>
+                        </h3>
+                        <div class="block-customer-content-item">
+                          <ul>
+                            <li>
+                              <label>联系人：</label>
+                              <div class="block-customer-content-item-content">周先进</div>
+                            </li>
+                            <li>
+                              <label>手机号码：</label>
+                              <div class="block-customer-content-item-content">18888888888</div>
+                            </li>
+                            <li>
+                              <label>联系地址：</label>
+                              <div class="block-customer-content-item-content">浙江省杭州市江南大道1880号中南国际大厦2008</div>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="block-customer-content-item">
+                          <ul>
+                            <li>
+                              <label>联系人：</label>
+                              <div class="block-customer-content-item-content">周先进</div>
+                            </li>
+                            <li>
+                              <label>手机号码：</label>
+                              <div class="block-customer-content-item-content">18888888888</div>
+                            </li>
+                            <li>
+                              <label>联系地址：</label>
+                              <div class="block-customer-content-item-content">浙江省杭州市江南大道1880号中南国际大厦2008</div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="tab2">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-5-2">
+                <div class="block block-customer-activity">
+                  <ul class="nav nav-tabs">
+                    <li role="presentation" class="active">
+                        <a href="#do1" role="tab" data-toggle="tab">动态</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#do2" role="tab" data-toggle="tab">参与人</a>
+                    </li>
+                  </ul>
+                  <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane fade in active" id="do1">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <select name="" class="form-control">
+                              <option value="1">联系电话</option>
+                              <option value="2">联系电话</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <select name="" class="form-control">
+                              <option value="1">初访</option>
+                              <option value="2">联系电话</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <textarea name="name" rows="4" cols="80" class="form-control" placeholder="请输入备注信息"></textarea>
+                          </div>
+                          <div class="form-group text-align-right">
+                            <input type="submit" class="btn btn-danger" value="提交">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="block-customer-activity-list">
+                        <ul>
+                          <li>
+                            <div class="block-customer-activity-avatar">
+                              <img src="images/avatar.png" width="50" alt="">
+                            </div>
+                            <div class="block-customer-activity-text">
+                              <p class="time">2017-11-05 12:09</p>
+                              <p>
+                                <span class="person">周先进</span> 新增联系人 <span class="contact">王二小</span>
+                              </p>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="block-customer-activity-avatar">
+                              <img src="images/avatar.png" width="50" alt="">
+                            </div>
+                            <div class="block-customer-activity-text">
+                              <p class="time">2017-11-05 12:09</p>
+                              <p>
+                                <span class="person">周先进</span> 新增联系人 <span class="contact">王二小</span>
+                              </p>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="block-customer-activity-avatar">
+                              <img src="images/avatar.png" width="50" alt="">
+                            </div>
+                            <div class="block-customer-activity-text">
+                              <p class="time">2017-11-05 12:09</p>
+                              <p>
+                                <span class="person">周先进</span> 新增联系人 <span class="contact">王二小</span>
+                              </p>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade in active" id="do2">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End row -->
+          </div> <!-- container -->
+
+        </div> <!-- content -->
+
+        <footer class="footer">
+          © 2017 杭浙江点乔教育科技有限公司（哈奇乐）版权所有
+        </footer>
+
+      </div>
+      <!-- End content-page -->
+
+
+      <!-- ============================================================== -->
+      <!-- End Right content here -->
+      <!-- ============================================================== -->
+
+
+      <!-- Right Sidebar -->
+      <div class="side-bar right-bar">
+        <a href="javascript:void(0);" class="right-bar-toggle">
+          <i class="zmdi zmdi-close-circle-o"></i>
+        </a>
+        <h4 class="">Notifications</h4>
+        <div class="notification-list nicescroll">
+          <ul class="list-group list-no-border user-list">
+            <li class="list-group-item">
+              <a href="#" class="user-list-item">
+                <div class="avatar">
+                  <img src="images/users/avatar-2.jpg" alt="">
+                </div>
+                <div class="user-desc">
+                  <span class="name">Michael Zenaty</span>
+                  <span class="desc">There are new settings available</span>
+                  <span class="time">2 hours ago</span>
+                </div>
+              </a>
+            </li>
+            <li class="list-group-item">
+              <a href="#" class="user-list-item">
+                <div class="icon bg-info">
+                  <i class="zmdi zmdi-account"></i>
+                </div>
+                <div class="user-desc">
+                  <span class="name">New Signup</span>
+                  <span class="desc">There are new settings available</span>
+                  <span class="time">5 hours ago</span>
+                </div>
+              </a>
+            </li>
+            <li class="list-group-item">
+              <a href="#" class="user-list-item">
+                <div class="icon bg-pink">
+                  <i class="zmdi zmdi-comment"></i>
+                </div>
+                <div class="user-desc">
+                  <span class="name">New Message received</span>
+                  <span class="desc">There are new settings available</span>
+                  <span class="time">1 day ago</span>
+                </div>
+              </a>
+            </li>
+            <li class="list-group-item active">
+              <a href="#" class="user-list-item">
+                <div class="avatar">
+                  <img src="images/users/avatar-3.jpg" alt="">
+                </div>
+                <div class="user-desc">
+                  <span class="name">James Anderson</span>
+                  <span class="desc">There are new settings available</span>
+                  <span class="time">2 days ago</span>
+                </div>
+              </a>
+            </li>
+            <li class="list-group-item active">
+              <a href="#" class="user-list-item">
+                <div class="icon bg-warning">
+                  <i class="zmdi zmdi-settings"></i>
+                </div>
+                <div class="user-desc">
+                  <span class="name">Settings</span>
+                  <span class="desc">There are new settings available</span>
+                  <span class="time">1 day ago</span>
+                </div>
+              </a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+      <!-- /Right-bar -->
+
+    </div>
+    <!-- END wrapper -->
+
+
+
+    <script>
+      var resizefunc = [];
+    </script>
+
+    <!-- jQuery  -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/detect.js"></script>
+    <script src="js/fastclick.js"></script>
+    <script src="js/jquery.slimscroll.js"></script>
+    <script src="js/jquery.blockUI.js"></script>
+    <script src="js/waves.js"></script>
+    <script src="js/jquery.nicescroll.js"></script>
+    <script src="js/jquery.scrollTo.min.js"></script>
+
+    <!-- App js -->
+    <script src="js/jquery.core.js"></script>
+    <script src="js/jquery.app.js"></script>
+
+  </body>
+</html>
